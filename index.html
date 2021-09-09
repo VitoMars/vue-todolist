@@ -28,8 +28,13 @@
             />
          </div>
          <div class="row">
-            <input class="newToDo" type="text" placeholder="Nuovo ToDo" />
-            <button class="add" id="add">Aggiungi</button>
+            <input
+               v-model="newToDo"
+               class="newToDo"
+               type="text"
+               placeholder="Nuovo ToDo"
+            />
+            <button @click="addToDo" class="add" id="add">Aggiungi</button>
          </div>
          <div class="container">
             <div class="elenco">
