@@ -40,7 +40,11 @@
          <div class="container">
             <div class="elenco">
                <ul v-if="toDos.length != 0">
-                  <li :class="" class="flex" v-for="(toDo, index) in toDos">
+                  <li
+                     :class="checkDone ? 'bg-done' : 'bg-not-done'"
+                     class="flex"
+                     v-for="(toDo, index) in toDos"
+                  >
                      {{toDo.title}}
                      <i @click="removeToDo(index)" class="fas fa-times"></i>
                   </li>

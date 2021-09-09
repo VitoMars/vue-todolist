@@ -39,5 +39,15 @@ const app = new Vue({
       removeToDo(index) {
          this.toDos.splice(index, 1);
       },
+      checkDone() {
+         this.toDos.forEach((element, index) => {
+            if (this.toDos[index].done == true) {
+               return true;
+            } else return false;
+         });
+         // if ((this.toDos.done = true)) {
+         //    return true;
+         // } else return false;
+      },
    },
 });
