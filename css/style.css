@@ -27,6 +27,7 @@
 .elenco {
    display: flex;
    flex-direction: column;
+   align-items: space-between;
    background-color: lightgrey;
    padding: 30px;
    border-radius: 20px;
@@ -35,6 +36,11 @@
 
 li {
    font-size: 20px;
+}
+i {
+   float: right;
+   cursor: pointer;
+   font-size: 25px;
 }
 
 .newToDo,
@@ -50,8 +56,11 @@ li {
    outline: none;
 }
 
-.col {
-   height: 200px;
-   width: 60%;
-   border-radius: 20px;
+.flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+#notToDo {
+   text-align: center;
 }

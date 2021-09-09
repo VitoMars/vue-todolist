@@ -38,7 +38,13 @@
          </div>
          <div class="container">
             <div class="elenco">
-               <li v-for="toDo in toDos">{{toDo}}</li>
+               <ul v-if="toDos.length != 0">
+                  <li class="flex" v-for="(toDo, index) in toDos">
+                     {{toDo}}
+                     <i @click="removeToDo(index)" class="fas fa-times"></i>
+                  </li>
+               </ul>
+               <h2 v-else id="notToDo">Non hai cose da fare</h2>
             </div>
          </div>
       </div>
