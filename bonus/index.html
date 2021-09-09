@@ -40,8 +40,9 @@
          <div class="container">
             <div class="elenco">
                <ul v-if="toDos.length != 0">
+                  <!-- MouseUp serve per risolvere il bug della colorazione -->
                   <li
-                     @click="changeColor(toDo)"
+                     @mouseup="changeColor(toDo)"
                      :class="toDo.done ? 'bg-green' : 'bg-red'"
                      class="flex"
                      v-for="(toDo, index) in toDos"
