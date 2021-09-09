@@ -56,7 +56,8 @@ i {
    color: #001533;
 }
 
-.newToDo:focus-visible {
+.newToDo:focus-visible,
+.add:focus-visible {
    outline: none;
 }
 
