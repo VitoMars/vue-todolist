@@ -1,0 +1,32 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.row {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+.row img {
+   height: 80px;
+}
+
+#add {
+   margin: 0px 20px;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+.col {
+   height: 200px;
+   width: 60%;
+   background-color: lightgrey;
+   border-radius: 20px;
+}
