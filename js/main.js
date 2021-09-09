@@ -1,6 +1,11 @@
 const app = new Vue({
    el: "#root",
    data: {
-      toDo: ["Fare la spesa", "Fare il bucato"],
+      toDos: [
+         "Fare la spesa",
+         "Fare il bucato",
+         "Fare i compiti",
+         "Fare schifo",
+      ],
    },
 });
