@@ -12,7 +12,7 @@ const app = new Vue({
       toDos: [
          {
             title: "Fare i compiti",
-            done: true,
+            done: false,
          },
          {
             title: "Fare la spesa",
@@ -24,7 +24,7 @@ const app = new Vue({
          },
          {
             title: "Fare schifo",
-            done: false,
+            done: true,
          },
       ],
    },
@@ -39,15 +39,8 @@ const app = new Vue({
       removeToDo(index) {
          this.toDos.splice(index, 1);
       },
-      checkDone() {
-         this.toDos.forEach((element, index) => {
-            if (this.toDos[index].done == true) {
-               return true;
-            } else return false;
-         });
-         // if ((this.toDos.done = true)) {
-         //    return true;
-         // } else return false;
+      changeColor(toDo) {
+         toDo.done = !toDo.done;
       },
    },
 });

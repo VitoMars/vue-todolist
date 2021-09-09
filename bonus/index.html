@@ -41,11 +41,12 @@
             <div class="elenco">
                <ul v-if="toDos.length != 0">
                   <li
-                     :class="checkDone() ? 'bg-green' : 'bg-red'"
+                     @click="changeColor(toDo)"
+                     :class="toDo.done ? 'bg-green' : 'bg-red'"
                      class="flex"
                      v-for="(toDo, index) in toDos"
                   >
-                     {{toDo.title}}
+                     {{toDo.title}} - {{toDo.done}}
                      <i @click="removeToDo(index)" class="fas fa-times"></i>
                   </li>
                </ul>
