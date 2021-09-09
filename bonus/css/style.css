@@ -65,10 +65,10 @@ i {
    text-align: center;
 }
 
-.bg-done {
+.bg-green {
    background-color: #00e165;
 }
 
-.bg-not-done {
-   background-color: red;
+.bg-red {
+   background-color: lightcoral;
 }

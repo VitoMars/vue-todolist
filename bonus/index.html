@@ -41,7 +41,7 @@
             <div class="elenco">
                <ul v-if="toDos.length != 0">
                   <li
-                     :class="checkDone ? 'bg-done' : 'bg-not-done'"
+                     :class="checkDone() ? 'bg-green' : 'bg-red'"
                      class="flex"
                      v-for="(toDo, index) in toDos"
                   >
