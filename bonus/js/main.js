@@ -2,17 +2,37 @@ const app = new Vue({
    el: "#root",
    data: {
       newToDo: "",
+      /* toDos: [
+          "Fare la spesa",
+          "Fare il bucato",
+          "Fare i compiti",
+          "Fare schifo",
+       ],*/
+
       toDos: [
-         "Fare la spesa",
-         "Fare il bucato",
-         "Fare i compiti",
-         "Fare schifo",
+         {
+            title: "Fare i compiti",
+            done: true,
+         },
+         {
+            title: "Fare la spesa",
+            done: false,
+         },
+         {
+            title: "Fare il bucato",
+            done: false,
+         },
+         {
+            title: "Fare schifo",
+            done: false,
+         },
       ],
    },
+
    methods: {
       addToDo() {
          if (this.newToDo != "") {
-            this.toDos.push(this.newToDo);
+            this.toDos.push({ title: this.newToDo, done: false });
             this.newToDo = "";
          }
       },

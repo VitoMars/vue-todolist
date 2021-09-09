@@ -40,8 +40,8 @@
          <div class="container">
             <div class="elenco">
                <ul v-if="toDos.length != 0">
-                  <li class="flex" v-for="(toDo, index) in toDos">
-                     {{toDo}}
+                  <li :class="" class="flex" v-for="(toDo, index) in toDos">
+                     {{toDo.title}}
                      <i @click="removeToDo(index)" class="fas fa-times"></i>
                   </li>
                </ul>

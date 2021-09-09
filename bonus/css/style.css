@@ -64,3 +64,11 @@ i {
 #notToDo {
    text-align: center;
 }
+
+.bg-done {
+   background-color: #00e165;
+}
+
+.bg-not-done {
+   background-color: red;
+}
