@@ -21,7 +21,7 @@
 .container {
    display: flex;
    justify-content: center;
-   margin-top: 50px;
+   margin: 40px 0px;
 }
 
 .elenco {
@@ -31,11 +31,15 @@
    background-color: lightgrey;
    padding: 30px;
    border-radius: 20px;
-   width: 50%;
+   width: 40%;
 }
 
 li {
    font-size: 20px;
+   cursor: pointer;
+   padding: 15px;
+   border-radius: 10px;
+   margin: 10px;
 }
 i {
    float: right;
