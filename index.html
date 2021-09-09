@@ -33,6 +33,7 @@
                class="newToDo"
                type="text"
                placeholder="Nuovo ToDo"
+               @keyUp.enter="addToDo()"
             />
             <button @click="addToDo" class="add" id="add">Aggiungi</button>
          </div>
